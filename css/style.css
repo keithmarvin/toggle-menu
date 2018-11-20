@@ -1,0 +1,94 @@
+html, body{
+  height:100%;
+  margin:0;
+}
+#container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*toggle menu*/
+#toggle{
+  display:block;
+  width:25px;
+  height:25px;
+  text-align:center;
+  margin:20px auto 20px;
+}
+#togglebg{
+ background-color: #459de1;
+ position:absolute;
+ width:45px;
+ height:45px;
+ border-radius:25px;
+ margin:10px;
+ z-index: 2;
+}
+
+#toggle span:after, #toggle span:before{
+  content:"";
+  position: absolute;
+  top: -9px;
+  left: 0;
+}
+
+#toggle span:after{
+  top: 9px;
+}
+
+#toggle span{
+  position:relative;
+  display:block;
+}
+
+#toggle span, #toggle span:after, #toggle span:before{
+  width:100%;
+  height:5px;
+  background:#97cffa;
+  border-radius:2px;
+  transition: all 0.3s;
+  text-align:center;
+  z-index:2;
+}
+
+.Changed span:before{
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.Changed span:after{
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.Changed span{
+ background:#459de1 !important;
+}
+/*menu elements*/
+#menu-elements{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+#menu-el-1{
+  background:#459de1;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+}
+
+#menu-el-2{
+  background:#aed9fa;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  
+}
+
+#menu-el-3{
+  background:#def1ff;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
